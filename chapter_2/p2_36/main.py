@@ -10,3 +10,15 @@ of that type of animal, which is placed in a random empty (i.e., previously
 None) location in the list. If a bear and a fish collide, however, then the
 fish dies (i.e., it disappears).
 """
+
+from river import River
+from animals import Bear, Fish
+
+
+game = River()
+
+game.start(Bear(), Fish())
+game._riverdict
+
+game._moveplayers()
+game._riverdict
