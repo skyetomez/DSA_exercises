@@ -1,5 +1,7 @@
 import re 
 
+#contextual parsing strategy#
+
 class Function:
     """
     This is a base class to handle arithmetic and creation of the polynomials
