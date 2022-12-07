@@ -1,5 +1,7 @@
 import random
+
 from animals import Bear, Fish
+
 
 class River:
     """
@@ -32,7 +34,8 @@ class River:
             elif len(piece) > 1: 
                 for i in piece:
                     self._riverdict[tile].remove(i)
-                    new_spot = ((tile + self._moveamount()) % self.length) + 1
+                    delta = tile + self._moveamount()
+                    new_spot = (delta % self.length) + 1
                     self._riverdict[new_spot].append(i)
             else:
                 pass
